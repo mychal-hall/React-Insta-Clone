@@ -1,5 +1,6 @@
 import React from "react";
 
+import './PostContainer.css'
 import CommentSection from "../CommentSection/CommentSection";
 
 function PostContainer(props) {
@@ -7,9 +8,9 @@ function PostContainer(props) {
     <>
       {props.post.map(post => (
         <div key={post.id} className="post">
-          <img src={post.thumbnailUrl} alt={post.username} />
-          <p>{post.username}</p>
-          <img src={post.imageUrl} alt='A post by {post.username}' />
+          <img className='thumbnail' src={post.thumbnailUrl} alt={post.username} />
+          <p className='username'>{post.username}</p>
+          <img className='postImage' src={post.imageUrl} alt='A post by {post.username}' />
           <CommentSection />
         </div>
       ))}

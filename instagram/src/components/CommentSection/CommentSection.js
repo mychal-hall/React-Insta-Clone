@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CommentSection = props => {
+function CommentSection(props) {
     return(
         <p>Yo, I'm the comment section.</p>
     )

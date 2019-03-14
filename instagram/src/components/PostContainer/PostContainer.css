@@ -1,0 +1,25 @@
+.post {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+}
+
+.thumbnail {
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: auto;
+    height: 40px;
+}
+
+.username {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.postImage {
+    width: 100%;
+    margin-top: 10px;
+}
