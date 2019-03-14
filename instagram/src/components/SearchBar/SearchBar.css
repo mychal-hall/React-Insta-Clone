@@ -1,0 +1,66 @@
+.searchBar {
+  width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height: 115px;
+  border-bottom: 2px solid lightgrey;
+}
+
+.camera {
+  margin-top: 27px;
+  margin-left: 51px;
+  height: 60px;
+}
+
+.divider {
+  height: 50px;
+  margin-top: 33px;
+  margin-left: 23px;
+  border-left: 1px solid black;
+}
+
+.logo {
+  margin-top: 35px;
+  margin-left: 10px;
+  height: 55px;
+  width: 188px;
+}
+
+.searchBox {
+  margin-left: 257px;
+  width: 330px;
+}
+
+.searchField {
+  height: 38px;
+  width: 315px;
+  margin-left: 5px;
+  margin-top: 38px;
+  background-color: rgb(250, 250, 250);
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 5px;
+}
+
+::placeholder {
+  line-height: 32px;
+  text-align: center;
+  font-size: 22px;
+}
+.compass {
+  margin-top: 39px;
+  margin-left: 326px;
+  height: 50px;
+}
+
+.heart {
+  margin-top: 40px;
+  margin-left: 28px;
+  height: 45px;
+}
+
+.user {
+  margin-top: 37px;
+  margin-left: 24px;
+  height: 50px;
+}

@@ -9,7 +9,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      post: dummyData
+      data: dummyData
     }
   }
 
@@ -20,7 +20,7 @@ class App extends Component {
           <SearchBar />
         </header>
         <div>
-          <PostContainer post={this.state.post} />
+          <PostContainer data={this.state.data} />
         </div>
       </div>
     );

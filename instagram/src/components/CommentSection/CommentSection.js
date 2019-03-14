@@ -1,9 +1,17 @@
-import React from 'react';
+import React from "react";
 
-function CommentSection(props) {
-    return(
-        <p>Yo, I'm the comment section.</p>
-    )
-}
+import Comment from "./Comment";
+
+const CommentSection = props => {
+  return (
+    <>
+      {props.comments.map(comment => (
+        <div className="comment">
+          <Comment comment={comment} />
+        </div>
+      ))}
+    </>
+  );
+};
 
 export default CommentSection;
