@@ -5,11 +5,11 @@ import Comment from "./Comment";
 const CommentSection = props => {
   return (
     <>
-      {props.comments.map(comment => (
-        <div className="comment">
-          <Comment comment={comment} />
+    {props.comments.map(comments => (
+        <div key={comments.id} className='comment'>
+        <Comment comment={props.comments}/>
         </div>
-      ))}
+    ))}
     </>
   );
 };

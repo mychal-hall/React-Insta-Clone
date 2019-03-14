@@ -11,7 +11,7 @@ function PostContainer(props) {
           <img className='thumbnail' src={data.thumbnailUrl} alt={data.username} />
           <p className='username'>{data.username}</p>
           <img className='dataImage' src={data.imageUrl} alt='A post by {data.username}' />
-          <CommentSection comments={props.data.comments}/>
+          <CommentSection comments={data.comments}/>
         </div>
       ))}
     </>
