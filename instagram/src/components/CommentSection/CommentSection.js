@@ -6,7 +6,7 @@ const CommentSection = props => {
   return (
     <>
     {props.comments.map(comments => (
-        <div key={comments.id} className='comment'>
+        <div key={comments.id} className='comments'>
         <Comment comment={props.comments}/>
         </div>
     ))}

@@ -1,16 +1,18 @@
 import React from "react";
 
-import './PostContainer.css'
+import './PostContainer.css';
+import PostHeader from './PostHeader';
+import PostFooter from './PostFooter';
 import CommentSection from "../CommentSection/CommentSection";
 
 function PostContainer(props) {
   return (
     <>
       {props.data.map(data => (
-        <div key={data.id} className="post">
-          <img className='thumbnail' src={data.thumbnailUrl} alt={data.username} />
-          <p className='username'>{data.username}</p>
+        <div className="post">
+          <PostHeader src={data.thumbnailUrl} username={data.username}/>
           <img className='dataImage' src={data.imageUrl} alt='A post by {data.username}' />
+          <PostFooter />
           <CommentSection comments={data.comments}/>
         </div>
       ))}
