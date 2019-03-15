@@ -7,8 +7,8 @@ function Comment(props) {
     <>
       {props.comment.map(comment => (
         <div className="comment">
-          <p className='commentUsername'>{comment.username}</p>
-          <p className='commentText'>{comment.text}</p>
+          <p className='commentContent'><b>{comment.username}</b> {comment.text}</p>
+          {/* <p className='commentText'>{comment.text}</p> */}
         </div>
       ))}
     </>

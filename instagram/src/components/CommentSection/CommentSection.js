@@ -3,7 +3,11 @@ import React from "react";
 import Comment from "./Comment";
 
 const CommentSection = props => {
-  return <Comment comment={props.comments} />;
+  return (
+    <div className="commentSection">
+      <Comment comment={props.comments} />
+    </div>
+  );
 };
 
 export default CommentSection;

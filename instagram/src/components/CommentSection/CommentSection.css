@@ -1,11 +1,15 @@
+.commentSection {
+  width: 100%;
+  margin-top: 0px;
+}
+
 .comment {
-    border: 1px solid red;
+  display: flex;
+  margin-left: 10px;
 }
 
-.commentUsername {
-    border: 1px solid green;
-}
-
-.commentText {
-    border: 1px solid blue;
+.commentContent {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
 }
