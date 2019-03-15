@@ -1,12 +1,16 @@
 import React from "react";
 
-
-const Comment = (props) => {
-    return (
+function Comment(props) {
+  return (
+    <>
+      {props.comment.map(comment => (
         <div className="comment">
-            <p>{props.comment.username}</p><p>{props.text}</p>
+          <p>{comment.username}</p>
+          <p>{comment.text}</p>
         </div>
-    );
+      ))}
+    </>
+  );
 }
 
 export default Comment;
