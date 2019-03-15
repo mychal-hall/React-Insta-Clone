@@ -12,7 +12,7 @@ function PostContainer(props) {
         <div className="post">
           <PostHeader src={data.thumbnailUrl} username={data.username}/>
           <img className='dataImage' src={data.imageUrl} alt='A post by {data.username}' />
-          <PostFooter />
+          <PostFooter likes={data.likes} />
           <CommentSection comments={data.comments}/>
         </div>
       ))}
