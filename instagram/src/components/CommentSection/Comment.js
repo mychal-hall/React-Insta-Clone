@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+
 import "./CommentSection.css";
 
 function Comment(props) {
   return (
     <>
-      {props.comment.map(comment => (
+      {props.data.map(comment => (
         <div className="comment">
           <p className="commentContent">
             <b>{comment.username}</b> {comment.text}
