@@ -9,7 +9,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: []
+      data: [],
+      filteredData: []
     };
   }
 
@@ -17,14 +18,33 @@ class App extends Component {
     return this.setState({ data: dummyData });
   }
 
+  searchHandler = event => {
+    const data = this.state.data.filter(data => {
+      if (data.username.includes(event.target.value)) {
+        return data;
+      }
+    });
+    this.setState({ filteredData: data });
+  };
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <SearchBar />
+          <SearchBar
+            searchTerm={this.state.searchTerm}
+            searchPosts={this.searchHandler}
+          />
         </header>
         <div>
-          <PostContainer data={this.state.data} />
+          <PostContainer
+            incrementLike={this.incrementLike}
+            data={
+              this.state.filteredData.length > 0
+                ? this.state.filteredData
+                : this.state.data
+            }
+          />
         </div>
       </div>
     );

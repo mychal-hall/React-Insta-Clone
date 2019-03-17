@@ -14,7 +14,11 @@ const SearchBar = props => {
       <div className="divider" />
       <img className="logo" src={logo} alt="Instagram logo" />
       <form className="searchBox">
-        <input className="searchField" placeholder="Search" />
+        <input
+          className="searchField"
+          placeholder="Search"
+          onKeyDown={props.searchPosts}
+        />
       </form>
       <img className="compass" src={compass} alt="Compass" />
       <img className="heart" src={heart} alt="heart" />

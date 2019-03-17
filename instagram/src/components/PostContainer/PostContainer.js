@@ -17,7 +17,7 @@ function PostContainer(props) {
             src={data.imageUrl}
             alt="A post by {data.username}"
           />
-          <PostFooter likes={data.likes} />
+          <PostFooter incrementLike={props.incrementLike} likes={data.likes} />
           <CommentSection comments={data.comments} />
         </div>
       ))}
