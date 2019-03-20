@@ -6,7 +6,7 @@ import withAuthenticate from './Authentication/withAuthenticate';
 import Login from './components/Login/Login';
 
 
-const ComponentFromWithAuthenticate = withAuthenticate(PostsPage);
+const ComponentFromWithAuthenticate = withAuthenticate(PostsPage)(Login);
 
 class App extends Component {
 
@@ -14,7 +14,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <Login />
       <ComponentFromWithAuthenticate />
       </div>
     );
