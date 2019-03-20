@@ -9,18 +9,36 @@ class Login extends Component {
     };
   }
 
-  changeHandler = e => {
-    this.setState({ [e.target.name]: e.target.value });
+  changeHandler = event => {
+    this.setState({ [event.target.name]: event.target.value });
   };
 
-  
+  loginSubmit = event => {
+    const user = this.state.username;
+    localStorage.setItem("user", user);
+    const password = this.state.password;
+    localStorage.setItem("password", password)
+    window.location.reload();
+  };
 
   render() {
     return (
       <form>
-        <input name="username" placeholder="Username" />
-        <input name="password" placeholder="Password" />
-        <button>Login</button>{" "}
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          value={this.state.username}
+          onChange={this.changeHandler}
+        />
+        <input
+          type="text"
+          name="password"
+          placeholder="Password"
+          value={this.state.password}
+          onChange={this.changeHandler}
+        />
+        <button onClick={this.loginSubmit}>Login</button>{" "}
       </form>
     );
   }
