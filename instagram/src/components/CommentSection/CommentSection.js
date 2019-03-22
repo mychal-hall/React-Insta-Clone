@@ -48,7 +48,7 @@ class CommentSection extends Component {
         comments: [
           ...prevState.comments,
           {
-            username: "frankenstein789465",
+            username: localStorage.getItem("user"),
             text: prevState.text
           }
         ],
@@ -64,7 +64,7 @@ class CommentSection extends Component {
         <p className="momentTrack">{moment().fromNow("hh")} ago . . . </p>
         <NewComment onSubmit={this.submitHandler}>
           <CommentAdd
-            value={this.props.text}
+            value={this.state.text}
             onChange={this.changeHandler}
             placeholder="Add a comment..."
           />
