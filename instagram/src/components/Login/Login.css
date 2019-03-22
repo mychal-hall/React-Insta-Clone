@@ -1,24 +1,4 @@
-.loginContainer {
-  margin: 100px auto;
-  width: 300px;
-}
 
 .loginLogo {
   margin-left: 25px;
-}
-
-.loginForm {
-  display: flex;
-  flex-direction: column;
-  margin-left: 45px;
-  width: 200px;
-}
-
-.loginInput {
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.loginButton {
-  height: 30px;
 }

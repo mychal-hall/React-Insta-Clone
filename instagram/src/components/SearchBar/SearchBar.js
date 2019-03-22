@@ -7,6 +7,8 @@ import compass from "../img/compass.png";
 import heart from "../img/heart.png";
 import user from "../img/user.png";
 
+
+
 const SearchBar = props => {
   return (
     <div className="searchBar">
