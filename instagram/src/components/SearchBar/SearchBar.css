@@ -1,0 +1,38 @@
+
+.camera {
+  margin-top: 27px;
+  margin-left: 51px;
+  height: 60px;
+}
+
+.divider {
+  height: 50px;
+  margin-top: 33px;
+  margin-left: 23px;
+  border-left: 1px solid black;
+}
+
+.logo {
+  margin-top: 35px;
+  margin-left: 10px;
+  height: 55px;
+  width: 188px;
+}
+
+.compass {
+  margin-top: 39px;
+  margin-left: 326px;
+  height: 50px;
+}
+
+.heart {
+  margin-top: 40px;
+  margin-left: 28px;
+  height: 45px;
+}
+
+.user {
+  margin-top: 37px;
+  margin-left: 24px;
+  height: 50px;
+}
